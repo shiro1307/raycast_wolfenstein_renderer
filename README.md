@@ -2,7 +2,7 @@
 
 A 2.5D raycasting engine built from scratch with JavaScript and HTML5 Canvas. Inspired by classic games like [Wolfenstein 3D](https://en.wikipedia.org/wiki/Wolfenstein_3D), this project turns a simple 2D grid map into a convincing 3D perspective using rays, trigonometry, and real-time rendering.  
 
-![2026-02-20 22-29-38 (online-video-cutter com)](https://github.com/user-attachments/assets/c1c74bba-297d-4ea0-8ac5-cd79ee553306)
+![2026-02-20 22-29-38 (online-video-cutter com)(2)](https://github.com/user-attachments/assets/cd762768-0299-4181-8c92-6f0553fbd750)
 
 ---
 
