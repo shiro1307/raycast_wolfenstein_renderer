@@ -64,7 +64,7 @@ function castRay(angle) {
     }
 }
 
-function sprayRays(angle, fov = Math.PI / 1.5, rays = 80) {
+function sprayRays(angle, fov = Math.PI / 3, rays = 80) {
 
     for (let i = 0; i < rays; i++) {
         const a = angle - fov / 2 + (i / rays) * fov;
@@ -73,10 +73,11 @@ function sprayRays(angle, fov = Math.PI / 1.5, rays = 80) {
 
         if (!ray) continue;
 
-        let dfac = Math.pow(ray.dist, 0.8);
-        let barheight = sy / dfac;
+        let d = ray.dist * Math.cos(a - player.angle);
 
-        let shade = 255 / (1 + ray.dist * 0.3);
+        let barheight = (sy / d) * 1.5;
+
+        let shade = 255 / (1 + d * 0.3);
         let color = `rgb(${shade}, ${shade}, ${shade})`;
 
         //console.log(color)
