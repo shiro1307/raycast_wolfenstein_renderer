@@ -64,7 +64,7 @@ function castRay(angle) {
     }
 }
 
-function sprayRays(angle, fov = Math.PI / 3, rays = 80) {
+function sprayRays(angle, fov = Math.PI / 3, rays = 8000) {
 
     for (let i = 0; i < rays; i++) {
         const a = angle - fov / 2 + (i / rays) * fov;
@@ -98,11 +98,9 @@ function updatePlayer() {
 
     // Rotation
     if (keys["ArrowLeft"]) {
-        console.log(player.angle);
         player.angle -= rotSpeed;
     }
     if (keys["ArrowRight"]) {
-        console.log(player.angle);
         player.angle += rotSpeed;
     }
 
